@@ -19,7 +19,7 @@ Website institucional do Laboratório de Avaliação e Pesquisa Qualitativa — 
 
 ## Funcionalidades
 
-- **Página Institucional** — apresentação do laboratório, missão, áreas de pesquisa e estatísticas
+- **Página Institucional** — apresentação do laboratório, missao, áreas de pesquisa e estatísticas
 - **Pesquisadores** — listagem dos membros com links para o Currículo Lattes
 - **Publicações** — artigos qualitativos e livros publicados pelo grupo
 - **Subcoordenações** — 6 subcoordenações com páginas dedicadas (Formação/INTERLAPQ, Publicações, Projetos, Graduação, Curadoria Científica, Disposições Gerais) e formulário de candidatura
