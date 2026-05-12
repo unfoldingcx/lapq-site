@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
-import { GraduationCap, Users, BookMarked, Lightbulb, CheckCircle, Award, ChevronRight } from 'lucide-react';
+import { Users, BookMarked, CheckCircle, Award, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import AnimatedElement from '../components/utils/AnimatedElement';
 import SectionTitle from '../components/ui/SectionTitle';
+import TeamMemberCard from '../components/ui/TeamMemberCard';
 import CandidaturasForm from '../components/forms/CandidaturasForm';
 
 const SubcoordenacaoGraduacao = () => {
@@ -65,25 +66,25 @@ const SubcoordenacaoGraduacao = () => {
         </div>
       </section>
 
-      {/* Status Section */}
+      {/* Coordenadora Section */}
       <section className="py-16 bg-white">
         <div className="container-custom">
           <AnimatedElement>
-            <div className="max-w-3xl mx-auto p-8 rounded-xl bg-purple-50 border-l-4 border-purple-600">
-              <div className="flex items-start">
-                <GraduationCap size={32} className="text-purple-600 mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h2 className="font-heading text-2xl font-bold mb-3 text-dark">
-                    Responsável: A Definir
-                  </h2>
-                  <p className="text-lg text-gray-700 leading-relaxed">
-                    Esta subcoordenação busca aproximar o LAPQ da comunidade de graduandos. Buscamos coordenadores e equipe
-                    com experiência em formação de alunos e vontade de estimular o protagonismo estudantil em pesquisa qualitativa.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <SectionTitle
+              title="Coordenadora"
+              subtitle="Conheça a responsável por esta subcoordenação"
+              center
+            />
           </AnimatedElement>
+
+          <div className="max-w-md mx-auto mt-12">
+            <TeamMemberCard
+              nome="Profa. Dra. Janette Burnstein"
+              titulo="Professora e Pesquisadora"
+              instituicao="Universidade Presbiteriana Mackenzie"
+              tipo="coordenador"
+            />
+          </div>
         </div>
       </section>
 
@@ -227,13 +228,13 @@ const SubcoordenacaoGraduacao = () => {
               >
                 <div className="flex items-center mb-4">
                   <Award size={28} className="text-purple-700 mr-3" />
-                  <h3 className="font-heading text-xl font-bold text-dark">Status: A Definir</h3>
+                  <h3 className="font-heading text-xl font-bold text-dark">Coordenação</h3>
                 </div>
                 <p className="text-gray-800 mb-4">
-                  Estamos buscando coordenadores e equipe apaixonados por educação e pesquisa.
+                  Coordenação a cargo da Profa. Dra. Janette Burnstein.
                 </p>
                 <p className="text-sm text-gray-700">
-                  Coordenador e equipe a serem definidos. Docentes e pesquisadores com experiência em graduação são bem-vindos!
+                  Universidade Presbiteriana Mackenzie.
                 </p>
               </AnimatedElement>
             </div>

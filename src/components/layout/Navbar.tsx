@@ -43,9 +43,9 @@ const Navbar = () => {
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-2" onClick={closeMenu}>
           <img
-            src="/logo_lapq.jpeg"
+            src="/logo_lapq.png"
             alt="LAPQ"
-            className={`h-8 w-auto transition-all duration-300 ${
+            className={`h-10 w-auto transition-all duration-300 ${
               isScrolled || !isHomePage ? '' : 'bg-white/90 rounded px-1 py-0.5'
             }`}
           />
@@ -114,6 +114,16 @@ const Navbar = () => {
             Livros
           </NavLink>
           <NavLink
+            to="/ambiente-audiovisual"
+            className={({ isActive }) =>
+              `${linkClasses} ${
+                isScrolled || !isHomePage ? 'text-dark' : 'text-white'
+              } ${isActive ? activeLinkClasses : ''}`
+            }
+          >
+            Ambiente Audiovisual
+          </NavLink>
+          <NavLink
             to="/duvidas"
             className={({ isActive }) =>
               `${linkClasses} ${
@@ -156,11 +166,11 @@ const Navbar = () => {
                 Publicações
               </NavLink>
               <NavLink
-                to="/subcoordenacoes/projetos"
+                to="/subcoordenacoes/pos-graduacao"
                 className="block px-4 py-2 text-dark hover:bg-primary/10"
                 onClick={closeMenu}
               >
-                Projetos
+                Pós-Graduação
               </NavLink>
               <NavLink
                 to="/subcoordenacoes/graduacao"
@@ -233,6 +243,9 @@ const Navbar = () => {
             <NavLink to="/livros" className="font-medium" onClick={closeMenu}>
               Livros
             </NavLink>
+            <NavLink to="/ambiente-audiovisual" className="font-medium" onClick={closeMenu}>
+              Ambiente Audiovisual
+            </NavLink>
             <NavLink to="/duvidas" className="font-medium" onClick={closeMenu}>
               Dúvidas
             </NavLink>
@@ -258,8 +271,8 @@ const Navbar = () => {
                   <NavLink to="/subcoordenacoes/publicacoes" className="text-sm" onClick={closeMenu}>
                     Publicações
                   </NavLink>
-                  <NavLink to="/subcoordenacoes/projetos" className="text-sm" onClick={closeMenu}>
-                    Projetos
+                  <NavLink to="/subcoordenacoes/pos-graduacao" className="text-sm" onClick={closeMenu}>
+                    Pós-Graduação
                   </NavLink>
                   <NavLink to="/subcoordenacoes/graduacao" className="text-sm" onClick={closeMenu}>
                     Graduação

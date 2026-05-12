@@ -33,10 +33,13 @@ const Subcoordenacoes = () => {
     },
     {
       id: '3',
-      nome: 'Coordenação Adjunta de Projetos e Parcerias Interinstitucionais',
-      slug: 'projetos',
-      descricao: 'Responsável a definir. Articular redes e parcerias para sustentabilidade.',
-      coordenador: undefined,
+      nome: 'Coordenação Adjunta de Pós-Graduação',
+      slug: 'pos-graduacao',
+      descricao: 'Coordenadora: Profa. Dra. Rute Abreu. Fortalece a integração e a pesquisa na pós-graduação.',
+      coordenador: {
+        nome: 'Profa. Dra. Rute Abreu',
+        instituicao: 'Instituto Politécnico da Guarda (IPG) - Portugal'
+      },
       icon: Briefcase,
       background: 'bg-orange-50'
     },
@@ -44,8 +47,11 @@ const Subcoordenacoes = () => {
       id: '4',
       nome: 'Coordenação Adjunta de Integração com a Graduação',
       slug: 'graduacao',
-      descricao: 'Responsável a definir. Protagonismo discente e participação estudantil em pesquisa.',
-      coordenador: undefined,
+      descricao: 'Coordenadora: Profa. Dra. Janette Burnstein. Protagonismo discente e participação estudantil em pesquisa.',
+      coordenador: {
+        nome: 'Profa. Dra. Janette Burnstein',
+        instituicao: 'Universidade Presbiteriana Mackenzie'
+      },
       icon: GraduationCap,
       background: 'bg-purple-50'
     },

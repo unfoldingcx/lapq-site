@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Logo and About */}
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <img src="/logo_lapq.jpeg" alt="LAPQ" className="h-8 w-auto brightness-0 invert" />
+              <img src="/logo_lapq.png" alt="LAPQ" className="h-10 w-auto" />
             </div>
             <p className="text-gray-300 mb-6">
               Laboratório de Avaliação e Pesquisa Qualitativa - um espaço coletivo Multi(inter)disciplinar vinculado aos Programas de Pós-graduação.
